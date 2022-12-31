@@ -26,7 +26,6 @@ class ModelLoader(object):
             # First level should be folders named after models
             for model_folder in os.listdir(directory):
                 folder_path = os.path.join(directory, model_folder)
-                print(model_folder)
                 if (
                     os.path.isdir(folder_path)
                     and model_folder in self.managed_directories
